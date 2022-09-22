@@ -1,0 +1,158 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+/* style and color of page title */
+h1 {
+  font-family: Comic Sans MS;
+  color: #1F618D;
+}
+
+/* style and box-sizing of columns */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 430px;
+  border:2px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* style and color using in "image of me and Biki" title */
+h2.image{
+  color: #AF5A52;
+  font-family: Bradley Hand, cursive;
+  font-size: 30px;
+}
+
+/* style and color using in "language and programming..."" title */
+h2.table{
+  color: #AF5A52;
+  font-family: Bradley Hand, cursive;
+  font-size: 30px;
+}
+
+/* style and color using in "contact me!" title */
+h2.contact{
+  color: #AF5A52;
+  font-family: Bradley Hand, cursive;
+  font-size: 30px;
+}
+
+/* style and color using in "check box" title */
+h2.check{
+  color: #AF5A52;
+  font-family: Bradley Hand, cursive;
+  font-size: 30px;
+}
+
+/* style and color using in "please enter your name ..." title */
+h2.name{
+  color: #AF5A52;
+  font-family: Bradley Hand, cursive;
+  font-size: 30px;
+}
+
+/* style and color using in "More other Projects!" title */
+h2.more{
+  color: #AF5A52;
+  font-family: Bradley Hand, cursive;
+  font-size: 30px;
+}
+
+/* style and color using in "the meter" title */
+h2.meter{
+  color: #AF5A52;
+  font-family: Bradley Hand, cursive;
+  font-size: 30px;
+}
+
+/* style and color using in "language and programming..." table */
+table.language {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border: 3px solid #D26B61;
+  width: 100%;
+  border-spacing: 10px;
+}
+
+/* style and color using in "language and programming... " title table */
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: center;
+  word-spacing: 8px;
+}
+
+/* style and color using in "language and programming..." title table */
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* style and color using in "contacts" table */
+table, th, td {
+  border: 1px solid black;
+}
+
+/* style and color using in "image of me and biki" table */
+table.picture {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border: 5px dashed #1F618D;
+  width: 40%;
+  border-spacing: 5px;
+}
+
+
+
+/* style and color for tic toc game */
+button.tic {
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  background-color: #9FE2BF;
+}
+
+/* style and color of meter */
+meter::-webkit-meter-optimum-value {
+      box-shadow: 0 5px 5px -5px #999 inset;
+      background-image: linear-gradient(
+        90deg, 
+        #DFFF00 20%, 
+        #FFBF00 30%,
+        #FF7F50 40%,
+        #DE3163 50%,
+        #9FE2BF 60%,
+        #40E0D0 70%,
+        #6495ED 80%,
+        #CCCCFF 90%,
+        #1F618D 100%
+      );
+      background-size: 100% 100%;
+    }
+
+/* style and color of meter */
+meter {
+  width: 500px;
+  height: 30px;
+}
+
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>form and table</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- JavaScript file included -->
+      <script src="style.js"></script>
+    
+  </head>  
+  <body>
+    <h1>Hi! I am Lucy's fun page!</h1>
+    
+    <p>Try to make a simple fun page, let's see how it end up with! :) </p>
+    <!--  button to link to other html file of tic tac toe game   -->
+    <button class="tic"><a href="tic.html#tic">Tic Tac Toe game!</a></button>
+
+  <!-- area of a table incode my art picture(image) and biki's picture(image) -->
+  <h2 class="image">Image of me and Biki!</h2>
+      <p>I am two Equal Columns table.</p>
+    <div class="row">
+      
+    <div class="column" style="background-color:#F15C50;">
+    
+      <h2>My image in art!</h2>
+        <p>I created this a while ago.</p>
+
+        <table class="picture">
+          <tr>
+            <td>
+              <img src="https://cdn.glitch.com/090cf09e-ae57-48b0-aadd-4acc1c45004b%2FScreen%20Shot%202019-06-10%20at%2012.15.30%20PM.png?v=1621896014783" border="3" height="250" width="250">
+            </td>
+          </tr>
+        </table>
+    </div>
+  
+    <div class="column" style="background-color:#FFA07A;">
+      <h2>Biki's picture!</h2>
+        <p>Biki's picture!</p>
+    
+        <table class="picture">
+          <tr>
+            <td>
+              <img src="https://cdn.glitch.com/090cf09e-ae57-48b0-aadd-4acc1c45004b%2FIMG_2329.jpeg?v=1621896016255" border="3" height="250" width="250">
+            </td>
+          </tr>
+        </table>
+  </div>
+</div>
+    
+    
+<!--   the area of a table about language and programming language I know  -->
+    <h2 class="table">Language and programming language that I know!</h2>
+      <p>I am a list table.</p>
+    
+      <table class="language">
+        <tr>
+          <th>Language</th>
+          <th>Programming Language</th>
+        </tr>
+        <tr>
+          <td>Chinese</td>
+          <td>C++</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>Python</td>
+        </tr>
+        <tr>
+          <td>Taiwanese</td>
+          <td>html</td>
+        </tr>
+      </table>
+    
+    
+<!--   the area of a table include contace info    -->
+    <h2 class="contact">Contact me!</h2>
+      <p>I am a table with span rows and span columns.</p>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Project made</th>
+            <th colspan="2">Email and Phone Number</th>
+          </tr>
+          <tr>
+            <td>Lucy</td>
+            <td>8</td>
+            <td rowspan="2">email@gmail.com</td>
+            <td rowspan="2">(123)456-7890</td>
+          </tr>
+          <tr>
+            <td>Biki</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td colspan="2">Total Project made: 11</td>
+          </tr>
+        </table>
+    
+
+
+
+    
+<!--   area for enter name and email address   -->
+<h2 class="name">Enter your name and email address.</h2>
+    <p>Note: This one not work yet.</p>
+      <form action="welcome.php" method="post">
+          Name: <input type="text" name="name"><br><br>
+          E-mail: <input type="text" name="email"><br><br>  
+          <input type="submit">
+      </form>
+    
+    
+<!--   check box area for checking gender   -->
+    <h2 class="check">Check box</h2>
+      <form>
+        <input type="checkbox" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="checkbox" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="checkbox" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </form> 
+    
+    
+<!--   meter area with style and color   -->
+    <h2 class="meter">The meter.</h2>
+      <p>This is a rainbow meter!</p>
+        <meter style="background-color:white;" min="5" low="40" high="90" max="100" value="90"></meter>
+    
+    
+<!--   a drop down list of all my projects   -->
+ <h2 class="more">More other Projects!</h2>
+    <p>The drop-down list of all my other projects! <br>Note: Window might be block! Try use other browser.</p>
+    <label for="project">Please select a Project to check it out:</label>
+    
+    <select id="select" onchange="var win = window.open(this.value, '_blank');win.focus();">
+      <option value="https://knowledge-is-power.glitch.me">Knowledge is Power</option>
+      <option value="https://hi-its-lucy-here.glitch.me">Hi! It's Lucy here!</option>
+      <option value="https://link-to-somewhere.glitch.me">My websites Links</option>
+      <option value="https://image-audio-video.glitch.me">All about puppies!</option>
+      <option value="https://css-mypuppy-story.glitch.me">It is my puppy's background story!</option>
+      <option value="https://csslayout-its-me-again.glitch.me">Hi! It's me again!</option>
+      <option value="https://res-web-design-puppy.glitch.me">Something about Puppies!</option>
+    </select>
+    
+  </body>
+</html>
+
